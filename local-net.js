@@ -3,7 +3,6 @@ import { Suspense } from "/web_modules/react.js";
 import { html } from "/web_modules/htm/react.js";
 import useLotusClient from "./use-lotus-client.js";
 import MinerPanel from "./miner-panel.js";
-import MinerPanel2 from "./miner-panel2.js";
 
 function LocalNet(props) {
   const node0 = useLotusClient(0, "node");
@@ -21,9 +20,6 @@ function LocalNet(props) {
   return html`
     <div>
       <h1>Websocket Prototype</h1>
-      <nav>
-        <a href="/">Top</a>
-      </nav>
       <div
         style=${{
           display: "grid",
